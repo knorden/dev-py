@@ -4,7 +4,7 @@ class Node(object):
         self.data = key
         self.left = None
         self.right = None
-
+        
 
 class BST(object):    
     def insert(self, parent, key):
