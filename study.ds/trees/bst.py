@@ -12,7 +12,9 @@ class BST(object):
             return Node(key)
         else:
             parent.left = self.insert(parent.left, key) if key < parent.data else parent.left
+
             parent.right = self.insert(parent.right, key) if key > parent.data else parent.right
+
         return parent
 
     def printIN(self, parent):
