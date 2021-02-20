@@ -25,7 +25,7 @@ dictMONO = {}
 #   cleanse data as the the primilinary step. This is a must to ensure useable data.
 #
 with open(SRC_PATH) as inputFile:
-    srcLine = csv.reader(inputFile, delimtmp_iter=' ')
+    srcLine = csv.reader(inputFile, delimiter=' ')
     for everyList in srcLine:
 
         if '' in everyList:
@@ -56,7 +56,7 @@ arr = srcDATABASE
 #     for comb in combinations(subset, 2):
 #         d[comb] += 1
 
-# tmp_iter = 0
+# Accumulater = 0
 # a = d.most_common()
 # output = []
 # for i in range(0, 5):
@@ -80,32 +80,32 @@ for subset in arr:
     for comb in combinations(subset, 2):
         d[comb] += 1
 
-tmp_iter = 0
+Accumulater = 0
 a = d.most_common()
 output = []
-while tmp_iter < 5:
+while Accumulater < 5:
     for pair, freq in a:
-        if tmp_iter == 5:
+        if Accumulater == 5:
             break
         if freq > SUPP:
             output.append((pair, freq))
-            tmp_iter += 1
+            Accumulater += 1
 
 # METHOD 2
 #####################################################################
 # counts = collections.defaultdict(int)
 # for collab in arr:
 #     collab.sort()
-#     for pair in tmp_itertools.combinations(collab, 2):
+#     for pair in Accumulatertools.combinations(collab, 2):
 #         counts[pair] +=1
-# tmp_iter = 0
-# while (tmp_iter < 5):
+# Accumulater = 0
+# while (Accumulater < 5):
 #     for pair, freq in counts.items():
-#         if tmp_iter == 5:
+#         if Accumulater == 5:
 #             break
 #         if freq > SUPP:
 #             output.append((pair,freq))
-#             tmp_iter += 1
+#             Accumulater += 1
 
 
 # for item in output:
