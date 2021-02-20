@@ -6,8 +6,8 @@ import itertools
 # from mlxtend.frequent_patterns import association_rules
 from collections import Counter
 from itertools import combinations
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
 # SRC_PATH = 'data/browsingdata_50baskets.txt'
 # SRC_PATH = 'data/browsing-data.txt'
@@ -88,7 +88,7 @@ while tmp_iter < 5:
         if tmp_iter == 5:
             break
         if freq > SUPP:
-            output.append((pair,freq))
+            output.append((pair, freq))
             tmp_iter += 1
 
 # METHOD 2
