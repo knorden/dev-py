@@ -6,12 +6,13 @@ import itertools
 # from mlxtend.frequent_patterns import association_rules
 from collections import Counter
 from itertools import combinations
-# import numpy as np
-# import pandas as pd
+import numpy as np
+import pandas as pd
 
-# SRC_PATH = 'data/browsingdata_50baskets.txt'
-# SRC_PATH = 'data/browsing-data.txt'
-SRC_PATH = 'data/data-small.txt'
+# SRC_PATH = 'data/big-10K.txt
+# SRC_PATH = 'data/small-50.txt
+SRC_PATH = 'data/tiny-4.txt'
+
 # SUPP = 100
 # SUPP = 200
 SUPP = 5
