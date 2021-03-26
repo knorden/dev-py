@@ -1,0 +1,6 @@
+#+title: Working on the stream handling class
+#+description: I organize and keep track of my thought processes and problem solving steps here.
+
+So, I have pulled the lookup dicts as well as variables needed for the class to test run into a separate
+script. I then import that script into the primary script that contains the wip class container.
+

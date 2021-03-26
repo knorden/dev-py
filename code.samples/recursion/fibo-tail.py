@@ -10,11 +10,13 @@
 # def fib(n):
     # return fibo(n, 0, 1, 0)
 
+
 def fibo(i, pre, cur):
-    print("{}\t: {}".format(i,pre))
+    print("{}\t: {}".format(i, pre))
     if i == 0:
         return pre
     return fibo(i-1, cur, pre+cur)
+
 
 def fib(n):
     return fibo(n, 0, 1)
