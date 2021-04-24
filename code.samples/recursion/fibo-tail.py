@@ -29,8 +29,12 @@ def fib(n):
 #     return fib(n-1) + fib(n-2)
 
 
-aa = fib(9)
+aa = fib(3)
 print(aa)
+bb = fib(5)
+print(bb)
+cc = fib(9)
+print(cc)
 
 # 0 1 2 3 4 5 6  7  8  9 10
 # 0 1 1 2 3 5 8 13 21 34 55
