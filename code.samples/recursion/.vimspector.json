@@ -10,7 +10,7 @@
                 "python": "/usr/bin/python",
                 "stopOnEntry": true,
                 "debugOptions": [],
-                "program": "./fibo-tail.py"
+                "program": "${file}"
                 }
         }
     }
