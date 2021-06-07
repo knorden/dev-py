@@ -1,0 +1,18 @@
+{
+    "include": [
+        "src",
+        "backend"
+    ],
+    "exclude": [
+        "**/__pycache__"
+    ],
+    "stubPath": "./typings",
+    "executionEnvironments": [
+        {
+            "root": "src"
+        },
+        {
+            "root": "backend"
+        }
+    ]
+}
