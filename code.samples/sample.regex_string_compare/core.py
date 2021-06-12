@@ -44,7 +44,7 @@ def split_input(uin: str):
 #     return check_string(r[:-1], s[:-1], relation)
 
 
-def regex(p: Union[str, list], s: Union[str, list], match: int, pre_cp, pre_cs):
+def regex(pattern: Union[str, list], string: Union[str, list], match: int):
     if len(s) < len(p) or len(p) == 0:
         return match
 

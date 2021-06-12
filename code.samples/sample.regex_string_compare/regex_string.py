@@ -11,47 +11,75 @@ WILDCARDS = {'DOT': '.',
              'PLUS': '+'}
 
 
-def regex(p: Union[str, list], s: Union[str, list], match: int):
-    # if len(s) < len(p) or len(p) == 0:
-    if len(p) == 0 or len(s) == 0:
+# def regex(pattern: Union[str, list], string: Union[str, list], match):
+    # # if len(s) < len(p) or len(p) == 0:
+    # if len(pattern) == 0 or len(string) == 0:
+        # if len(string) < len(pattern):
+            # return False
+        # return match
+
+    # p, ppp = pattern[0], pattern[1::]
+    # s, sss = string[0], string[1::]
+    # if p in (s, '.'):
+        # if len(ppp) > 1 and ppp[1] == '?':
+            # if ppp[0] == sss[0]:
+                # return regex(ppp[2::], sss[1::], True)
+            # else:
+                # return regex(ppp[2::], sss, True)
+        # else:
+            # return regex(ppp, sss, True)
+    # else:
+        # if match is True and p != s:
+            # return False
+        # return regex(ppp, sss, False)
+
+
+def regex(pattern: Union[str, list], string: Union[str, list], match: int):
+    if len(pattern) == 0 or len(string) == 0:
         return match
 
-    head_p, rest_p = p[0], p[1::]
-    head_s, rest_s = s[0], s[1::]
-    if head_p == head_s or head_p == WILDCARDS['DOT']:
-        if len(rest_p) > 1 and rest_p[1] == WILDCARDS['QUESTION_MARK'] and head_p and head_s:
-            # if rest_p[0] == rest_s[0]:
-            print(rest_p, match)
-            print(rest_s, match)
-            return regex(rest_p[2::], rest_s, match + 3)
-            # else:
-                # return regex(rest_p[2::], rest_s, match + 2)
-        return regex(rest_p, rest_s, match + 1)
-
-        
+    p, ppp = pattern[0], pattern[1::]
+    s, sss = string[0], string[1::]
+    if p in (s, '.'):
+        match += 1
+        question_mark = 1
+        if len(ppp) > 1 and ppp[question_mark] == '?':
+            match += 1
+            if sss[0] == ppp[0]:
+                match += 1
+                sss = sss[question_mark::]
+                ppp = ppp[question_mark+1::]
+            else:
+                if sss[0] == ppp[question_mark+1]:
+                    match += 1
+                    ppp = ppp[question_mark+1::]
+                elif sss[0] != ppp[question_mark+1]:
+                    match *= -1
+                    ppp = []
+        return regex(ppp, sss, match) 
     else:
-        return regex(p, rest_s, match)
+        return regex(pattern, sss, match)
 
 
 def check_regex(p: str, s: str):
     if len(p) > 0:
-        if p[0] == WILDCARDS['HEAD'] and p[-1] == WILDCARDS['TAIL']\
-                and len(p) < len(s):
+        if len(p) < len(s) and p[0] == '^' and p[-1] == '$':
             return False
-        elif p[0] == '^':
+        if p[0] == '^':
             p = p[1::]
             s = s[:len(p)]
         if p[-1] == '$':
             s = s[::-1][:len(p)]
             p = p[::-1][1::]
 
-    result = regex(p, s, 0)
+    result = regex(p, s, False)
+    print(result)
     valid = [len(p)]
     return True if result in valid else False
 
 
 if __name__ == "__main__":
     reg = "colou?r"
-    sss = "color"
+    sss = "colouur"
 
     m = check_regex(reg, sss)
