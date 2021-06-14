@@ -44,36 +44,36 @@ def split_input(uin: str):
 #     return check_string(r[:-1], s[:-1], relation)
 
 
-def regex(pattern: Union[str, list], string: Union[str, list], match: int):
-    if len(s) < len(p) or len(p) == 0:
-        return match
+# def regex(pattern: Union[str, list], string: Union[str, list], match: int):
+    # if len(s) < len(p) or len(p) == 0:
+        # return match
 
-    head_p, rest_p = p[0], p[1::]
-    head_s, rest_s = s[0], s[1::]
-    if head_p == head_s or head_p == WILDCARDS['DOT']:
-        return regex(rest_p, rest_s, match + 1, head_p, head_s)
-    if head_p == WILDCARDS['QUESTION_MARK']:
-        print(f"'{WILDCARDS['QUESTION_MARK']}' {p} {s}")
-        return regex(rest_p, s, match, head_p, head_s)
-    else:
-        return regex(p, rest_s, match, head_p, head_s)
+    # head_p, rest_p = p[0], p[1::]
+    # head_s, rest_s = s[0], s[1::]
+    # if head_p == head_s or head_p == WILDCARDS['DOT']:
+        # return regex(rest_p, rest_s, match + 1, head_p, head_s)
+    # if head_p == WILDCARDS['QUESTION_MARK']:
+        # print(f"'{WILDCARDS['QUESTION_MARK']}' {p} {s}")
+        # return regex(rest_p, s, match, head_p, head_s)
+    # else:
+        # return regex(p, rest_s, match, head_p, head_s)
 
 
-def check_regex(p: str, s: str):
-    if len(p) > 0:
-        if p[0] == WILDCARDS['HEAD'] and p[-1] == WILDCARDS['TAIL']\
-                and len(p) < len(s):
-            return False
-        elif p[0] == '^':
-            p = p[1::]
-            s = s[:len(p)]
-        if p[-1] == '$':
-            s = s[::-1][:len(p)]
-            p = p[::-1][1::]
+# def check_regex(p: str, s: str):
+    # if len(p) > 0:
+        # if p[0] == WILDCARDS['HEAD'] and p[-1] == WILDCARDS['TAIL']\
+                # and len(p) < len(s):
+            # return False
+        # elif p[0] == '^':
+            # p = p[1::]
+            # s = s[:len(p)]
+        # if p[-1] == '$':
+            # s = s[::-1][:len(p)]
+            # p = p[::-1][1::]
 
-    result = regex(p, s, 0, "", "")
-    valid = [len(p)]
-    return True if result in valid else False
+    # result = regex(p, s, 0, "", "")
+    # valid = [len(p)]
+    # return True if result in valid else False
 
 
 def check_all(uin: str):

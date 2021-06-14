@@ -42,21 +42,30 @@ def regex(pattern: Union[str, list], string: Union[str, list], match: int):
     s, sss = string[0], string[1::]
     if p in (s, '.'):
         match += 1
-        question_mark = 1
-        if len(ppp) > 1 and ppp[question_mark] == '?':
+        wildcard = 1
+        if len(ppp) > 1 and ppp[wildcard] == '?':
             match += 1
             if sss[0] == ppp[0]:
                 match += 1
-                sss = sss[question_mark::]
-                ppp = ppp[question_mark+1::]
-            else:
-                if sss[0] == ppp[question_mark+1]:
-                    match += 1
-                    ppp = ppp[question_mark+1::]
-                elif sss[0] != ppp[question_mark+1]:
+                sss = sss[wildcard::]
+                ppp = ppp[wildcard+1::]
+                if sss[0] != ppp[0]:
                     match *= -1
                     ppp = []
-        return regex(ppp, sss, match) 
+            else:
+                if sss[0] == ppp[wildcard+1]:
+                    match += 1
+                    ppp = ppp[wildcard+1::]
+                    if sss[0] != ppp[0]:
+                        match *= -1
+                        ppp = []
+        elif len(ppp) > 1 and ppp[wildcard] == '.':
+            print(sss)
+            print(ppp)
+        elif len(ppp) > 1 and ppp[wildcard] == '*':
+            print(sss)
+            print(ppp)
+        return regex(ppp, sss, match)
     else:
         return regex(pattern, sss, match)
 
