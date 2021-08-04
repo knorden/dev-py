@@ -1,0 +1,33 @@
+`1554, MONDAY-JAN-11-2021 | @CA`
+
+#+title: Choosing Python for rapid prototyping/drafting
+
+I have been thinking over the past 2 days about picking up another language as my main working language.  C++ is great for all of its deep and well-defined rules (*1), but its development time is way too long.  I need a high-level language that can allow me to do /more tasks/ instead of spending all my time on /one single task/.
+
+
+I think Python is a good choice for the following reasons:
+
+*** 1. Popularity
+Popularity means accessibility.  Being popular means that it's easy enough to to learn for many people.  This implies a shorter learning curve and faster implementation of ideas.
+
+*** 2. Indeed simpler than C++
+Its syntax is trimmed to favor rapid prototyping.  In other words, I spend less energy and attention on working my keyboard and navigating code blocks as compared to C++.
+
+Because of the overly protective nature of C++, even the background task of guarding the code is given to the readers.  The author, once having got into the /flow/ state, simply treats it as an automated activity.  Still a /resource intensive/ activity to be sure when compared to high-level languages like Python, Scala or Kotlin (*2).
+
+However, for a reader, it takes even more energy to parse through all the background noise.  The reader has to decipher the *author's intention* through a soup of curly braces, pointers, references, and so on.  It's a non-trivial energy expenditure that could have better been spent to meditate on *the ideas behind the code*.
+
+*** 3. Personal limitations & goal
+As a major-switcher, I simply do not have the wealth of experience that can only be gained through years of continuous coding.  This is the *10,000-hour mark* often mentioned by veteran programmers.  Effort alone cannot cover for that.  This is a fact that is deeply tied to reality itself.
+
+There are natural and biological limits to what a person can do in a given amount of time.  These limits make up the /upper bound/ of the rapid learning algorithm, if we put it in computer-science terms.  For example, there are edge cases and irregularities that can only be learned through encountering and solving accidents.  Rapid absorption of knowledge does not allow this kind of thing to happen.  Rapid learners do not know how the code works in practice.
+
+Ingenuity and resourcefulness (or the disciplined and clever management of time and ~attention~) can help close the distance.  However, how much of the gap is left depends largely on how well those  resources are managed.  This may sound like circular speech.  However, it is indeed a feedback loop.  The more one learns and gains experience through both /soaking up knowledge/ and /applying the learned knowledge in real projects/.  These two activities feed on each other and produce a compound effect.
+
+Personally speaking, I am aware of my limitations, so I know I must work harder to cover what I fall short.  For this reason, /I consider my current college attendance as a pay-to-access privilege into essential topics/.
+
+I am well aware that the overarching attitude about college for most students is that it is where you go to have fun and get a degree.  Most people just do their own things to kill time and fill in the hours.  Therefore, one cannot expect too much of the quality of education one get /by default/.  One /must/ be proactive in one's own learning to be accomplished in life, and this applies equally to college.
+
+I have a goal that I must accomplish. I cannot waste time.  Thus, I am willingly sacrificing my personal needs (?) for entertainment and dedicate all the attention (that I can consciously pool together) into learning and honing my *programming & engineering skills*.  As an outsider, I don't know enough about the landscape of the software engineering world. Therefore, I need an access into the ideas pertaining to the software engineering world, an entry-point, in order to start learning and acquiring the necessary skills underlying those ideas.
+
+*Thus, to prioritize learning Python is the most appropriate choice.*
