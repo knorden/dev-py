@@ -22,16 +22,16 @@ As a major-switcher, I simply do not have the wealth of experience that can only
 
 There are natural and biological limits to what a person can do rapidly in a given amount of time.  These limits make up the /upper bound/ for the algorithm of rapid-learning, to put it in computer-science terms.  For example, there are edge cases and irregularities that can only be learned through encountering and solving accidents.  Systematic absorption of knowledge only helps in erecting the framework.  It requires experience to become a good engineer.
 
-That being said, /ingenuity/ and /resourcefulness/ can help in closing the gap.  However, how much of the gap is left depends largely on how well time and attention are managed and this is highly subjective from individual to individual.  In other words, the disciplined and clever management of time and attention is what separate the wheat from the chaff.  It works like a feedback loop.  The more one learns and gains experience through /soaking up knowledge/ and /applying the knowledge into real projects/,  the more the two actions feed on each other and produce a compound effect, which propels the proactive learner above the average mass.
+That being said, /ingenuity/ and /resourcefulness/ can help in closing the gap.  However, how much of the gap is left depends largely on how well time and attention are managed.  This is highly subjective to the individuals.  In other words, what separate the wheat from the chaff is /discipline/ and the /clever management of time and attention/.  It works like a feedback loop.  The more one learns and gains experience through /soaking up knowledge/ and /applying the learned knowledge into real projects/, the more the two actions feed on each other and produce a compound effect.  This effect is what propels the proactive learner up above the average majority.
 
 
-Personally speaking, I am aware of my limitations, so I know I must work harder to cover for what I fall short.  For this reason, /I consider my current college attendance to be a pay-to-access subscription to essential topics/.
+Personally speaking, I am aware of my limitations, so I know I must work harder to cover for what I fall short.  For this reason, I consider my current college attendance to be a /pay-to-access/ subscription to essential topics.  It is a great investment.
 
 I am well aware that the overarching attitude about college for most students is that it is where you go to have fun and get a degree.  Most people just do their own things to kill time and fill in the hours while in college, because they are young and they have no idea what they are doing.  Therefore, one cannot expect too much of the quality of education one get /by default/.  One /must/ be proactive in one's own investigation and research to be accomplished in life, and this applies equally to college.
 
-I have a goal that I must accomplish.  I cannot waste time.  Thus, I am willingly sacrificing the need for entertainment (? ^3) to dedicate all of my attention into learning and honing my *programming & engineering skills*.  As an outsider, I don't know enough about the landscape of the software engineering world.  Therefore, I need a gateway leading to the essential ideas underlying the /professional/ layer of this field.  I need an entry-point.  This entry point is not afforded to most /ad hoc/ learners (bootcampers and hobby programmers).
+I have a goal that I must accomplish.  I cannot waste time.  Thus, I am willingly sacrificing the need for entertainment (? ^3) to dedicate all of my attention into learning and honing my *programming & engineering skills*.  Still largely an outsider at the moment, I simply don't know enough about the landscape of the software engineering world.  Therefore, I need a gateway leading to the essential ideas underlying the /professional/ layer of this field.  I need an entry-point.  This entry point is not afforded to most /ad hoc/ learners (bootcampers and hobby programmers).
 
-Therefore, knowing how to use a concise high-level language is tremendously helpful in this process.  A language with concise syntax is an amazing tool in /mapping out knowledge/ rapidly and efficiently.
+Knowing how to use a concise high-level language is tremendously helpful in this process.  A language with concise syntax is an amazing tool in /mapping out knowledge/ rapidly and efficiently.
 
 *Thus, learning Python is the most appropriate choice going forward.*
 
@@ -48,16 +48,16 @@ Interestingly, except for Python, the other three are based (and capable of runn
 
 These reasons are perhaps why Python has become extremely popular, just like Java previously did.
 
+
 ^3.
-This is more of meta topic.  As it turned out, I don't need entertainment all that much.  I grew up in a world of excessive distractions specifically designed to monetize attention.  For that reason, I /thought/ that I need entertainment.  I do not.
+This is more of a meta topic.  As it turned out, I don't need entertainment all that much.  I grew up in a world of excessive distractions specifically designed to monetize attention.  For that reason, I /thought/ that I need entertainment.  I do not.
 
 
-** A few other notes
+** Some more crystalized thoughts
 Revisiting a note I wrote 8 months ago really put into perspective how much I have changed so far.  Quality knowledge is incredibly expensive.  Some people go through their entire life mostly blind to the flow of information constantly and vigorously fluctuating around them, and that is really sad.
 
 I am grateful that I have gotten this chance to learn to handle information.  I am not letting it go.
 
 After 8 months, I can say certainly that I have mastered Python beyond the beginner level.  I have stepped into the high-intermediate level.  From here on, it requires advanced meta-knowledge in design patterns in order to break into the advanced level.  This is required for all languages, not just Python.  These meta-knowledge can only be acquired through built-up experience and continous learning.
-
 
 /I have gotten a solid foundation.  Now it is time to build on top of it./
