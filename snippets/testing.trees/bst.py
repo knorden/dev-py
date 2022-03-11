@@ -4,16 +4,18 @@ class Node(object):
         self.data = key
         self.left = None
         self.right = None
-        
 
-class BST(object):    
+
+class BST(object):
     def insert(self, parent, key):
         if not parent:
             return Node(key)
         else:
-            parent.left = self.insert(parent.left, key) if key < parent.data else parent.left
+            parent.left = self.insert(
+                parent.left, key) if key < parent.data else parent.left
 
-            parent.right = self.insert(parent.right, key) if key > parent.data else parent.right
+            parent.right = self.insert(
+                parent.right, key) if key > parent.data else parent.right
 
         return parent
 
@@ -34,7 +36,6 @@ class BST(object):
             self.printIN(parent.left)
             self.printIN(parent.right)
             print("{0} ".format(parent.data), end="")
-
 
 
 tree_A = BST()
@@ -59,3 +60,4 @@ print()
 print("Post-Order Traversal:")
 tree_A.printPOST(root)
 print()
+
