@@ -23,8 +23,7 @@ def make_postfix(exp: str) -> list[str]:
             if len(opStack) == 0:
                 opStack += c
             else:
-                stack_top = opDict[opStack[-1]]
-                precedence = opDict[c] - stack_top
+                precedence = opDict[c] - opDict[opStack[-1]]
                 if precedence == 0:
                     postfix += opStack.pop()
                     opStack += c
@@ -34,7 +33,7 @@ def make_postfix(exp: str) -> list[str]:
                     while precedence <= 0:
                         if len(opStack) == 0:
                             break
-                        precedence = opDict[c] - stack_top
+                        precedence = opDict[c] - opDict[opStack[-1]]
                         o = opStack.pop()
                         postfix += o
                     opStack += c
@@ -58,8 +57,7 @@ def make_postfix_bak(exp: str) -> list[str]:
             if len(opStack) == 0:
                 opStack += c
             else:
-                stack_top = opDict[opStack[-1]]
-                precedence = opDict[c] - stack_top
+                precedence = opDict[c] - opDict[opStack[-1]]
                 if precedence == 0:
                     postfix += opStack.pop()
                     opStack += c
@@ -69,7 +67,7 @@ def make_postfix_bak(exp: str) -> list[str]:
                     while precedence <= 0:
                         if len(opStack) == 0:
                             break
-                        precedence = opDict[c] - stack_top
+                        precedence = opDict[c] - opDict[opStack[-1]]
                         o = opStack.pop()
                         postfix += o
                     opStack += c
