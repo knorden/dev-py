@@ -19,15 +19,16 @@ def fibo(i, pre, cur):
     # return pre if i == 0 else fibo(i-1, cur, pre+cur)
 
 
-def fib(n):
-    return fibo(n, 0, 1)
-
 # def fib(n):
-#     if n==0:
-#         return 0
-#     if n==1:
-#         return 1
-#     return fib(n-1) + fib(n-2)
+    # return fibo(n, 0, 1)
+
+
+def fib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fib(n-1) + fib(n-2)
 
 
 aa = fib(3)
